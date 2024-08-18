@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="69c9e67a-287e-4f92-8170-19a32a52381c" name="UT-3 url shortener: p2" comment="">
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_shortener/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/url-shortener/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_shortener/url_shortener/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/url-shortener/url_shortener/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_shortener/url_shortener/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/url-shortener/url_shortener/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_shortener/url_shortener/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/url-shortener/url_shortener/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_shortener/url_shortener/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/url-shortener/url_shortener/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/url_shortener/url_shortener/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/url-shortener/url_shortener/wsgi.py" afterDir="false" />
+    </list>
+    <list id="9a1a672a-50eb-4ba8-8622-ff2d0fcdfae3" name="Changes" comment="start" />
+    <list id="874f9f95-b8f9-4be5-8cf8-fd4c4ea5d024" name="UT-1 QR Code Generator" comment="UT-1 QR Code Generator" />
+    <list id="0995e057-067f-49c8-acf4-531dba7dab1d" name="UT-2 url shortener" comment="UT-2 url shortener">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="d14882311fde82313adfb7fb42acb40eb1eb7631" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2kjPXMqN0mwStKs3LgGVPi7B1oY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UT-3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MONSTER/PycharmProjects/PollsApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;start.from.branch&quot;: &quot;origin/main&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;Default&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;Default&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Development&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Python.url-shortener">
+    <configuration name="qr-code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="utility-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/qr-code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/qr-code/qr-code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="url-shortener" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="utility-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/url-shortener" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/url-shortener/url-shortener.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.url-shortener" />
+        <item itemvalue="Python.qr-code" />
+        <item itemvalue="Python.qr-code" />
+        <item itemvalue="Python.qr-code" />
+        <item itemvalue="Python.qr-code" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <changelist id="9a1a672a-50eb-4ba8-8622-ff2d0fcdfae3" name="Changes" comment="" />
+      <created>1723794051081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723795486997</updated>
+      <workItem from="1723794057839" duration="1418000" />
+    </task>
+    <task id="LOCAL-00001" summary="start">
+      <option name="closed" value="true" />
+      <created>1723794567856</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723794567856</updated>
+    </task>
+    <task id="UT-1" summary="QR Code Generator">
+      <branch name="origin/master" repository="C:\Users\MONSTER\PycharmProjects\utility-test" original="true" />
+      <branch name="UT-1" repository="C:\Users\MONSTER\PycharmProjects\utility-test" />
+      <changelist id="874f9f95-b8f9-4be5-8cf8-fd4c4ea5d024" name="UT-1 QR Code Generator" comment="" />
+      <created>1723794411528</created>
+      <option name="issue" value="true" />
+      <url>https://umutayaz.youtrack.cloud/issue/UT-1</url>
+      <option name="number" value="1" />
+      <option name="presentableId" value="UT-1" />
+      <option name="project" value="UT" />
+      <option name="type" value="BUG" />
+      <updated>1723806133915</updated>
+      <workItem from="1723795487408" duration="32000" />
+      <workItem from="1723795534967" duration="2529000" />
+      <workItem from="1723798107929" duration="115000" />
+      <workItem from="1723798240961" duration="401000" />
+    </task>
+    <task id="UT-2" summary="url shortener: postgre + django compose">
+      <branch name="origin/main" repository="C:\Users\MONSTER\PycharmProjects\utility-test" original="true" />
+      <branch name="UT-2" repository="C:\Users\MONSTER\PycharmProjects\utility-test" />
+      <changelist id="0995e057-067f-49c8-acf4-531dba7dab1d" name="UT-2 url shortener" comment="" />
+      <created>1723798493937</created>
+      <option name="issue" value="true" />
+      <url>https://umutayaz.youtrack.cloud/issue/UT-2</url>
+      <option name="number" value="2" />
+      <option name="presentableId" value="UT-2" />
+      <option name="project" value="UT" />
+      <option name="type" value="BUG" />
+      <updated>1723814345353</updated>
+      <workItem from="1723798645063" duration="2487000" />
+      <workItem from="1723808613542" duration="2448000" />
+      <workItem from="1723811768508" duration="2465000" />
+      <workItem from="1723814318504" duration="27000" />
+    </task>
+    <task active="true" id="UT-3" summary="url shortener: p2">
+      <branch name="origin/main" repository="C:\Users\MONSTER\PycharmProjects\utility-test" original="true" />
+      <branch name="UT-3" repository="C:\Users\MONSTER\PycharmProjects\utility-test" />
+      <changelist id="69c9e67a-287e-4f92-8170-19a32a52381c" name="UT-3 url shortener: p2" comment="" />
+      <created>1723806129400</created>
+      <option name="issue" value="true" />
+      <url>https://umutayaz.youtrack.cloud/issue/UT-3</url>
+      <option name="number" value="3" />
+      <option name="presentableId" value="UT-3" />
+      <option name="project" value="UT" />
+      <option name="type" value="BUG" />
+      <updated>1723814345354</updated>
+      <workItem from="1723814345683" duration="972000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers>
+      <YouTrack url="https://umutayaz.youtrack.cloud">
+        <username>random</username>
+      </YouTrack>
+    </servers>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start" />
+    <MESSAGE value="UT-1 QR Code Generator" />
+    <MESSAGE value="UT-2 url shortener" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT-2 url shortener" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/utility_test$url_shortener.coverage" NAME="url-shortener Coverage Results" MODIFIED="1723808386689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/url-shortener" />
+    <SUITE FILE_PATH="coverage/utility_test$main.coverage" NAME="main Coverage Results" MODIFIED="1723795806983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/utility_test$qr_code.coverage" NAME="qr-code Coverage Results" MODIFIED="1723799266602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/qr-code" />
+  </component>
+</project>
