@@ -1,5 +1,7 @@
 from django.shortcuts import get_object_or_404, redirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import CreateView
+from django.views.generic.list import ListView
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.utils import timezone
@@ -15,6 +17,15 @@ def generate_short_url():
     return ''.join(random.choices(string.ascii_letters + string.digits, k=6))
 
 
+class URLListView(ListView):
+    model = CustomURL
+    template_name = 'url/user_urls.html'
+    context_object_name = 'urls'
+
+    def get_queryset(self):
+        return CustomURL.objects.filter(created_by=self.request.user)
+
+
 class URLCreateView(CreateView):
     model = CustomURL
     fields = ["long_url"]
@@ -22,9 +33,17 @@ class URLCreateView(CreateView):
     success_url = reverse_lazy("home")
 
     def form_valid(self, form):
-        form.instance.validity_period = timezone.now() + timedelta(minutes=5)
-        form.instance.short_url = generate_short_url()
-        form.instance.created_by = self.request.user
+        long_url = form.cleaned_data['long_url']
+        existing_url = CustomURL.objects.filter(long_url=long_url).first()
+        if existing_url:
+            existing_url.short_url = generate_short_url()
+            existing_url.validity_period = timezone.now() + timedelta(hours=1)
+            existing_url.save()
+            form.instance = existing_url
+        else:
+            form.instance.validity_period = timezone.now() + timedelta(hours=1)
+            form.instance.short_url = generate_short_url()
+            form.instance.created_by = self.request.user
         self.request.session['short_url'] = form.instance.short_url
         self.request.session['long_url'] = form.instance.long_url
         return super().form_valid(form)
@@ -39,10 +58,18 @@ class URLCreateView(CreateView):
 def redirect_to_long_url(request, short_url):
     custom_url = get_object_or_404(CustomURL, short_url=short_url)
     print(f"URL found: {custom_url.short_url}, Expired: {custom_url.is_expired()}")
-    if custom_url.is_expired():
+    if custom_url.is_expired() or not custom_url.is_active:
         return redirect('link_expired')
     return redirect(custom_url.long_url)
 
 
 def link_expired(request):
     return render(request, 'url/expired.html')
+
+
+def deactivate_url(request, short_url):
+    url = get_object_or_404(CustomURL, short_url=short_url)
+    print(url)
+    url.is_active = False
+    url.save()
+    return redirect('user_urls')
