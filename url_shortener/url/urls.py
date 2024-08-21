@@ -8,4 +8,5 @@ urlpatterns = [
     path('url/expired/', views.link_expired, name='link_expired'),
     path('url/user_urls/', views.URLListView.as_view(), name='user_urls'),
     path('deactivate/<str:short_url>/', views.deactivate_url, name='deactivate_url'),
+    path('extend/<str:short_url>/', views.extend_url_validity, name='extend_url_validity'),
 ]

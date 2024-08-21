@@ -13,6 +13,7 @@ class CustomURL(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
 
+    @property
     def is_expired(self):
         return timezone.now() > self.validity_period
 

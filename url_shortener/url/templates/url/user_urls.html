@@ -15,6 +15,8 @@
                 <th>Created At</th>
                 <th>Validity Period</th>
                 <th>Activity</th>
+                <th>Deactivate</th>
+                <th>Extend</th>
             </tr>
         </thead>
         <tbody>
@@ -40,6 +42,16 @@
                 <td>
                     {% if url.is_active %}
                     <a href="{% url 'deactivate_url' short_url=url.short_url %}" class="btn btn-outline-primary">Deactivate</a>
+
+                    {% endif %}
+                </td>
+                <td>
+                    {% if url.is_active %}
+                    <form method="post" action="{% url 'extend_url_validity' short_url=url.short_url %}" class="d-inline">
+                        {% csrf_token %}
+                        <input type="date" name="new_validity_date" required>
+                        <button type="submit" class="btn btn-outline-primary btn-sm">Extend</button>
+                    </form>
                     {% endif %}
                 </td>
             </tr>
@@ -53,5 +65,6 @@
     <div class="text-center mt-4">
             <a href="{% url 'home' %}" class="btn btn-outline-secondary">Back to Home</a>
     </div>
+
 </body>
 </html>
