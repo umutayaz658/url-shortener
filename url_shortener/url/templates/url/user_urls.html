@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your URLs</title>
+</head>
+<body>
+    <h1>Your URLs</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Short URL</th>
+                <th>Long URL</th>
+                <th>Created At</th>
+                <th>Validity Period</th>
+                <th>Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for url in urls %}
+            <tr>
+                <td>
+                    {% if url.is_active %}
+                    <a href="{% url 'redirect_to_long_url' short_url=url.short_url %}" class="text-white" target="_blank">
+                        {{ url.short_url }}
+                    </a>
+                    {% else %}
+                    {{ url.short_url }}
+                    {% endif %}
+                </td>
+                <td>
+                    <a href="{{ url.long_url }}" class="text-white" target="_blank">
+                        {{ url.long_url }}
+                    </a>
+                </td>
+                <td>{{ url.created_at }}</td>
+                <td>{{ url.validity_period }}</td>
+                <td>{% if url.is_active %}✔️{% else %}✖️{% endif %}</td>
+                <td>
+                    {% if url.is_active %}
+                    <a href="{% url 'deactivate_url' short_url=url.short_url %}" class="btn btn-outline-primary">Deactivate</a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">No URLs found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="text-center mt-4">
+            <a href="{% url 'home' %}" class="btn btn-outline-secondary">Back to Home</a>
+    </div>
+</body>
+</html>
