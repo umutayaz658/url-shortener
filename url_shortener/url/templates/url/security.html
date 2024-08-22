@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Password</title>
+</head>
+<body>
+    <h2>Enter password to access the link</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
+        <button type="submit">Submit</button>
+    </form>
+    {% if msg %}
+        <p style="color: red;">{{ msg }}</p>
+    {% endif %}
+</body>
+</html>
