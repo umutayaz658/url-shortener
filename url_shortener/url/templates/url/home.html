@@ -20,12 +20,24 @@
         <form method="post">
             {% csrf_token %}
             <div class="mb-3">
-                <label for="long_url" class="form-label">Long URL</label>
-                <input type="text" class="form-control" id="long_url" name="long_url" required>
+                <label for="long_url" class="form-label"><b>Long URL</b></label>
+                <input style="border-color: black; border-width: 2px" type="url" class="form-control" id="long_url" name="long_url" required>
             </div>
             <div class="mb-3">
-                <label for="validity_period" class="form-label">Validity Period</label>
-                <input type="text" class="form-control datetimepicker" id="validity_period" name="validity_period" required>
+                <label style="margin-left: -7.5cm" for="validity_period" class="form-label"><b>Validity Period</b></label>
+                <div class="d-flex align-items-center">
+                    <input style="border-color: black; border-width: 2px; width: 8cm" type="text" class="form-control datetimepicker" id="validity_period" name="validity_period" required>
+                    <div class="form-check ms-3">
+                        <input style="border-color: black" class="form-check-input" type="checkbox" id="one_time_only" name="one_time_only">
+                        <label class="form-check-label" for="one_time_only">
+                            One Time Use
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label"><b>Password (optional)</b></label>
+                <input style="border-color: black; border-width: 2px" type="password" class="form-control" name="password" id="password">
             </div>
             <button class="btn btn-outline-primary" type="submit">Apply</button>
         </form>
@@ -33,7 +45,7 @@
 
     {% if short_url %}
     <div class="mt-2">
-        <p class="text-muted">Short URL:</p>
+        <p class="text-muted"><b>Short URL:</b></p>
         <a href="{% url 'redirect_to_long_url' short_url=short_url %}" target="_blank">
             <strong>{{ short_url }}</strong>
         </a>

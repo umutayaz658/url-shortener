@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your URLs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
 </head>
 <body>
     <h1>Your URLs</h1>
@@ -15,12 +16,15 @@
                 <th>Created At</th>
                 <th>Validity Period</th>
                 <th>Activity</th>
+                <th>One-Time Only</th>
                 <th>Deactivate</th>
                 <th>Extend</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
             {% for url in urls %}
+            {% if not url.is_deleted %}
             <tr>
                 <td>
                     {% if url.is_active %}
@@ -39,6 +43,7 @@
                 <td>{{ url.created_at }}</td>
                 <td>{{ url.validity_period }}</td>
                 <td>{% if url.is_active %}✔️{% else %}✖️{% endif %}</td>
+                <td>{{ url.one_time_only|yesno:"Yes,No"}}</td>
                 <td>
                     {% if url.is_active %}
                     <a href="{% url 'deactivate_url' short_url=url.short_url %}" class="btn btn-outline-primary">Deactivate</a>
@@ -49,12 +54,21 @@
                     {% if url.is_active %}
                     <form method="post" action="{% url 'extend_url_validity' short_url=url.short_url %}" class="d-inline">
                         {% csrf_token %}
-                        <input type="date" name="new_validity_date" required>
-                        <button type="submit" class="btn btn-outline-primary btn-sm">Extend</button>
+                        <input type="text" name="new_validity_date" class="form-control datetimepicker" required>
+                        <button type="submit" class="btn btn-outline-primary btn-sm mt-2">Extend</button>
                     </form>
                     {% endif %}
                 </td>
+                <td>
+                    {% if not url.is_active %}
+                    <form method="post" action="{% url 'delete_url' short_url=url.short_url %}" class="d-inline">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-outline-danger btn-sm">Delete</button>
+                    </form>
+                    {% endif %}
+        </td>
             </tr>
+            {% endif %}
             {% empty %}
             <tr>
                 <td colspan="4">No URLs found.</td>
@@ -65,6 +79,16 @@
     <div class="text-center mt-4">
             <a href="{% url 'home' %}" class="btn btn-outline-secondary">Back to Home</a>
     </div>
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize Flatpickr
+        flatpickr(".datetimepicker", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            time_24hr: true
+        });
+    </script>
 
 </body>
 </html>
