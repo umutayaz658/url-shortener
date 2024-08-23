@@ -4,21 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your URLs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+    <style>
+        .datetimepicker {
+            height: 30px;
+            padding: 2px 6px;
+            font-size: 0.875rem;
+            width: 3.5cm;
+        }
+        th, td {
+            height: 50px;
+            vertical-align: middle;
+        }
+        .extend-column {
+            width: 5.5cm;
+        }
+        .extend-form {
+            display: flex;
+            align-items: center;
+        }
+        .extend-form .datetimepicker {
+            margin-right: 8px;
+        }
+        .long-url-column {
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .one-time-column {
+            width: 4cm;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your URLs</h1>
-    <table border="1">
-        <thead>
+    <h1 style="margin-left: 15px; margin-top: 10px" class="mb-4">Your URLs</h1>
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
             <tr>
                 <th>Short URL</th>
-                <th>Long URL</th>
+                <th class="long-url-column">Long URL</th>
                 <th>Created At</th>
                 <th>Validity Period</th>
                 <th>Activity</th>
-                <th>One-Time Only</th>
+                <th class="one-time-column">One-Time Only</th>
                 <th>Deactivate</th>
-                <th>Extend</th>
+                <th class="extend-column">Extend</th>
                 <th>Delete</th>
             </tr>
         </thead>
@@ -28,34 +60,34 @@
             <tr>
                 <td>
                     {% if url.is_active %}
-                    <a href="{% url 'redirect_to_long_url' short_url=url.short_url %}" class="text-white" target="_blank">
+                    <a href="{% url 'redirect_to_long_url' short_url=url.short_url %}" target="_blank">
                         {{ url.short_url }}
                     </a>
                     {% else %}
                     {{ url.short_url }}
                     {% endif %}
                 </td>
-                <td>
-                    <a href="{{ url.long_url }}" class="text-white" target="_blank">
+                <td class="long-url-column">
+                    <a href="{{ url.long_url }}" target="_blank">
                         {{ url.long_url }}
                     </a>
                 </td>
                 <td>{{ url.created_at }}</td>
                 <td>{{ url.validity_period }}</td>
-                <td>{% if url.is_active %}✔️{% else %}✖️{% endif %}</td>
-                <td>{{ url.one_time_only|yesno:"Yes,No"}}</td>
+                <td style="text-align: center">{% if url.is_active %}✔️{% else %}✖️{% endif %}</td>
+                <td style="text-align: center">{{ url.one_time_only|yesno:"Yes,No"}}</td>
                 <td>
                     {% if url.is_active %}
-                    <a href="{% url 'deactivate_url' short_url=url.short_url %}" class="btn btn-outline-primary">Deactivate</a>
+                    <a href="{% url 'deactivate_url' short_url=url.short_url %}" class="btn btn-outline-primary btn-sm">Deactivate</a>
 
                     {% endif %}
                 </td>
-                <td>
+                <td class="extend">
                     {% if url.is_active %}
-                    <form method="post" action="{% url 'extend_url_validity' short_url=url.short_url %}" class="d-inline">
+                    <form method="post" action="{% url 'extend_url_validity' short_url=url.short_url %}" class="extend-form">
                         {% csrf_token %}
                         <input type="text" name="new_validity_date" class="form-control datetimepicker" required>
-                        <button type="submit" class="btn btn-outline-primary btn-sm mt-2">Extend</button>
+                        <button type="submit" class="btn btn-outline-primary btn-sm">Extend</button>
                     </form>
                     {% endif %}
                 </td>
@@ -76,11 +108,15 @@
             {% endfor %}
         </tbody>
     </table>
-    <div class="text-center mt-4">
+    <div  style="margin-left: 15px">
             <a href="{% url 'home' %}" class="btn btn-outline-secondary">Back to Home</a>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         // Initialize Flatpickr
         flatpickr(".datetimepicker", {
