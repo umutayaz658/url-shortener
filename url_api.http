@@ -1,0 +1,39 @@
+### Create a New URL
+POST http://localhost:8000/api/urls/
+Content-Type: application/json
+
+{
+  "short_url": "1aaaaa",
+  "long_url": "https://www.google.com",
+  "validity_period": "2024-09-30T23:59:59Z",
+  "created_by": 1,
+  "is_active": true,
+  "one_time_only": false,
+  "password": ""
+}
+
+### List All URLs
+GET http://localhost:8000/api/urls/
+Accept: application/json
+
+### Get URL Details
+GET http://localhost:8000/api/urls/102/
+Accept: application/json
+
+### Update URL
+PUT http://localhost:8000/api/urls/103/
+Content-Type: application/json
+
+{
+  "short_url": "abssss",
+  "long_url": "https://www.google.com",
+  "validity_period": "2024-12-31T23:59:59Z",
+  "created_by": 1,
+  "is_active": false,
+  "one_time_only": true,
+  "password": "password"
+}
+
+### Delete URL
+DELETE http://localhost:8000/api/urls/103/
+Accept: application/json
