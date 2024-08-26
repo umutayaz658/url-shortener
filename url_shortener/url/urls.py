@@ -1,6 +1,6 @@
 from django.urls import path
-
 from . import views
+
 
 urlpatterns = [
     path('', views.URLCreateView.as_view(), name='home'),
@@ -10,4 +10,6 @@ urlpatterns = [
     path('deactivate/<str:short_url>/', views.deactivate_url, name='deactivate_url'),
     path('extend/<str:short_url>/', views.extend_url_validity, name='extend_url_validity'),
     path('url/delete/<str:short_url>/', views.delete_url, name='delete_url'),
+    path('api/urls/', views.URLListCreateView.as_view(), name='url-list-create'),
+    path('api/urls/<int:pk>/', views.URLDetailView.as_view(), name='url-detail'),
 ]
