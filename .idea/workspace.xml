@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d44812cb-fee5-4130-a052-108bd282f64e" name="Changes" comment="as">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_shortener/url/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_shortener/url/templates/url/expired.html" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url/templates/url/expired.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_shortener/url/templates/url/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url/templates/url/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_shortener/url/templates/url/user_urls.html" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url/templates/url/user_urls.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_shortener/url/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/url_shortener/url/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url/views.py" afterDir="false" />
+    <list default="true" id="69c9e67a-287e-4f92-8170-19a32a52381c" name="UT-3 url shortener: p2" comment="UT-3 url shortener: p2">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f0b7f582-6b38-4269-9824-58e5cfaecae3/storage_v2/_src_/database/database.exGpag/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f0b7f582-6b38-4269-9824-58e5cfaecae3/storage_v2/_src_/database/database.exGpag/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/url_shortener/url_shortener/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/url_shortener/url_shortener/settings.py" afterDir="false" />
+    </list>
+    <list id="9a1a672a-50eb-4ba8-8622-ff2d0fcdfae3" name="Changes" comment="start" />
+    <list id="874f9f95-b8f9-4be5-8cf8-fd4c4ea5d024" name="UT-1 QR Code Generator" comment="UT-1 QR Code Generator" />
+    <list id="0995e057-067f-49c8-acf4-531dba7dab1d" name="UT-2 url shortener" comment="UT-2 url shortener">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,19 +22,37 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="HTTP Request" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="base" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2l08TyPge7EuKqB08Hlg2goicEK" />
+  <component name="ProjectId" id="2kjPXMqN0mwStKs3LgGVPi7B1oY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -51,42 +68,141 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;UT-3&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MONSTER&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MONSTER/PycharmProjects/PollsApp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Docker&quot;,
+    &quot;start.from.branch&quot;: &quot;origin/main&quot;,
+    &quot;timeTracker.activityTracker&quot;: &quot;null&quot;,
+    &quot;timeTracker.comment&quot;: &quot;&quot;,
+    &quot;timeTracker.inactivityPeriodInMills&quot;: &quot;600000&quot;,
+    &quot;timeTracker.isAutoTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isAutoTrackingTemporaryDisabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isManualTrackingEnable&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPaused&quot;: &quot;true&quot;,
+    &quot;timeTracker.isPostAfterCommitEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isPostedScheduled&quot;: &quot;true&quot;,
+    &quot;timeTracker.isRunning&quot;: &quot;false&quot;,
+    &quot;timeTracker.isScheduledEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.isWhenProjectClosedEnabled&quot;: &quot;false&quot;,
+    &quot;timeTracker.issueId&quot;: &quot;Default&quot;,
+    &quot;timeTracker.issueIdReadable&quot;: &quot;Default&quot;,
+    &quot;timeTracker.pausedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.query&quot;: &quot;&quot;,
+    &quot;timeTracker.recordedTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.scheduledPeriod&quot;: &quot;19:00:0&quot;,
+    &quot;timeTracker.startTime&quot;: &quot;0&quot;,
+    &quot;timeTracker.timeInMills&quot;: &quot;0&quot;,
+    &quot;timeTracker.type&quot;: &quot;Development&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+    ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MONSTER\PycharmProjects\utility-test\url_shortener\url" />
+      <recent name="C:\Users\MONSTER\PycharmProjects\utility-test\url_shortener\url\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="url_api | Create a New URL" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/url_api.http" requestIdentifier="Create a New URL" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="url_api | Delete URL" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/url_api.http" index="5" requestIdentifier="Delete URL" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="url_api | Get URL Details" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/url_api.http" index="3" requestIdentifier="Get URL Details" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="url_api | List All URLs" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/url_api.http" index="2" requestIdentifier="List All URLs" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="url_api | Update URL" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/url_api.http" index="4" requestIdentifier="Update URL" runType="Run single request">
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="as">
+    <task id="Default" summary="Default task">
+      <changelist id="9a1a672a-50eb-4ba8-8622-ff2d0fcdfae3" name="Changes" comment="" />
+      <created>1723794051081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723795486997</updated>
+      <workItem from="1723794057839" duration="1418000" />
+    </task>
+    <task id="LOCAL-00001" summary="start">
       <option name="closed" value="true" />
-      <created>1724239663233</created>
+      <created>1723794567856</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1724239663233</updated>
+      <updated>1723794567856</updated>
     </task>
-    <task id="LOCAL-00002" summary="as">
-      <option name="closed" value="true" />
-      <created>1724239668237</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1724239668237</updated>
+    <task id="UT-1" summary="QR Code Generator">
+      <branch name="origin/master" repository="C:\Users\MONSTER\PycharmProjects\utility-test" original="true" />
+      <branch name="UT-1" repository="C:\Users\MONSTER\PycharmProjects\utility-test" />
+      <changelist id="874f9f95-b8f9-4be5-8cf8-fd4c4ea5d024" name="UT-1 QR Code Generator" comment="" />
+      <created>1723794411528</created>
+      <option name="issue" value="true" />
+      <url>https://umutayaz.youtrack.cloud/issue/UT-1</url>
+      <option name="number" value="1" />
+      <option name="presentableId" value="UT-1" />
+      <option name="project" value="UT" />
+      <option name="type" value="BUG" />
+      <updated>1723806133915</updated>
+      <workItem from="1723795487408" duration="32000" />
+      <workItem from="1723795534967" duration="2529000" />
+      <workItem from="1723798107929" duration="115000" />
+      <workItem from="1723798240961" duration="401000" />
     </task>
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="d44812cb-fee5-4130-a052-108bd282f64e" name="Changes" comment="as" />
-      <created>1724305646131</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1724305646131</updated>
-      <workItem from="1724305647586" duration="15121000" />
+    <task id="UT-2" summary="url shortener: postgre + django compose">
+      <branch name="origin/main" repository="C:\Users\MONSTER\PycharmProjects\utility-test" original="true" />
+      <branch name="UT-2" repository="C:\Users\MONSTER\PycharmProjects\utility-test" />
+      <changelist id="0995e057-067f-49c8-acf4-531dba7dab1d" name="UT-2 url shortener" comment="" />
+      <created>1723798493937</created>
+      <option name="issue" value="true" />
+      <url>https://umutayaz.youtrack.cloud/issue/UT-2</url>
+      <option name="number" value="2" />
+      <option name="presentableId" value="UT-2" />
+      <option name="project" value="UT" />
+      <option name="type" value="BUG" />
+      <updated>1723814345353</updated>
+      <workItem from="1723798645063" duration="2487000" />
+      <workItem from="1723808613542" duration="2448000" />
+      <workItem from="1723811768508" duration="2465000" />
+      <workItem from="1723814318504" duration="27000" />
     </task>
-    <option name="localTasksCounter" value="3" />
-    <servers />
+    <task active="true" id="UT-3" summary="url shortener: p2">
+      <branch name="origin/main" repository="C:\Users\MONSTER\PycharmProjects\utility-test" original="true" />
+      <branch name="UT-3" repository="C:\Users\MONSTER\PycharmProjects\utility-test" />
+      <changelist id="69c9e67a-287e-4f92-8170-19a32a52381c" name="UT-3 url shortener: p2" comment="" />
+      <created>1723806129400</created>
+      <option name="issue" value="true" />
+      <url>https://umutayaz.youtrack.cloud/issue/UT-3</url>
+      <option name="number" value="3" />
+      <option name="presentableId" value="UT-3" />
+      <option name="project" value="UT" />
+      <option name="type" value="BUG" />
+      <updated>1724399515011</updated>
+      <workItem from="1723814345683" duration="972000" />
+      <workItem from="1724391526043" duration="15884000" />
+      <workItem from="1724614591043" duration="918000" />
+      <workItem from="1724653961465" duration="16324000" />
+      <workItem from="1724675493246" duration="372000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers>
+      <YouTrack url="https://umutayaz.youtrack.cloud">
+        <username>random</username>
+      </YouTrack>
+    </servers>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
@@ -102,7 +218,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="UT-3" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -115,8 +231,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="as" />
-    <option name="LAST_COMMIT_MESSAGE" value="as" />
+    <MESSAGE value="start" />
+    <MESSAGE value="UT-1 QR Code Generator" />
+    <MESSAGE value="UT-2 url shortener" />
+    <MESSAGE value="UT-3 url shortener: p2" />
+    <option name="LAST_COMMIT_MESSAGE" value="UT-3 url shortener: p2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/utility_test$url_shortener.coverage" NAME="url-shortener Coverage Results" MODIFIED="1723808386689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/url-shortener" />
