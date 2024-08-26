@@ -12,8 +12,12 @@ from datetime import datetime
 from datetime import timedelta
 from .models import CustomURL
 from django import forms
+from rest_framework import viewsets
 import string
 import random
+from .models import CustomURL
+from rest_framework import generics
+from .serializers import URLSerializer
 
 
 def generate_short_url():
@@ -113,3 +117,13 @@ def delete_url(request, short_url):
     url.is_deleted = True
     url.save()
     return redirect('user_urls')
+
+
+class URLListCreateView(generics.ListCreateAPIView):
+    queryset = CustomURL.objects.all()
+    serializer_class = URLSerializer
+
+
+class URLDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = CustomURL.objects.all()
+    serializer_class = URLSerializer
